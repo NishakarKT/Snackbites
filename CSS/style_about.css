@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    padding: 0vw;
+    margin: 0vw;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    background-color: white;
+    animation: bg_theme 20s ease alternate infinite;
+}
+
+@keyframes bg_theme {
+    20% {
+        background-color: teal;
+    }
+    40% {
+        background-color: lightcoral;
+    }
+    60% {
+        background-color: lightblue;
+    }
+    80% {
+        background-color: lightgreen;
+    }
+    100% {
+        background-color: hotpink;
+    }
+}
+
+header::before {
+    background: url("https://images.unsplash.com/photo-1508905475152-c325323ac955?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHBlb3BsZXxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=600&q=60") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 13.5vw;
+    left: 0vw;
+    width: 98.2vw;
+    height: 150vh;
+    margin: 1vh 0.2vw;
+    border-radius: 1vw;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.intro {
+    display: flex;
+    width: 98.2vw;
+    height: fit-content;
+    background: url("https://images.unsplash.com/photo-1481671703460-040cb8a2d909?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80") no-repeat center center/cover;
+    opacity: 0.8;
+    margin: 0.2vw;
+    border-radius: 1vw;
+}
+
+#title {
+    color: white;
+    font-size: 7vw;
+    font-family: 'Lobster', cursive;
+    text-shadow: 0.3vw 0.3vw black;
+    padding: 0.4vw 0.2vw;
+}
+
+.intro div:hover {
+    color: brown;
+}
+
+.intro img {
+    width: 8vw;
+    height: 8vw;
+    margin: 0.5vw;
+    margin-left: 3vw;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.intro img:hover {
+    cursor: pointer;
+    transform: rotate3d(0, 1, 0, 1080deg);
+}
+
+.intro img:active {
+    transition-duration: 1ms;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1vw;
+}
+
+.navBar .navItems {
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    font-size: 1.65vw;
+    font-weight: bold;
+    font-family: 'Redressed', cursive;
+}
+
+.navBar .navItems a {
+    color: teal;
+    background-color: white;
+    text-align: center;
+    border-radius: 15vw;
+    margin: 1vh 0.8vw;
+    padding: 0.5vw 1vw;
+    width: 15vw;
+    height: fit-content;
+    box-shadow: 0.1vh 0.1vh black;
+}
+
+.navBar .navItems #about{
+    color: white;
+    background-color: skyblue;
+    transform: scale(1.1);
+}
+
+.navBar .navItems a:hover {
+    color: teal;
+    background-color: lightgray;
+    transform: scale(1.2);
+}
+
+.navBar .navItems a:active, .navBar .navItems #about:active {
+    background-color: darkgray;
+    transform: scale(1.1);
+    box-shadow: -0.1vh -0.1vh black;
+}
+
+.navBar .search {
+    display: flex;
+    margin: 1vh 01vw;
+}
+
+.navBar .search input {
+    color: teal;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'Akaya Telivigala', cursive;
+    border: 0.25vw solid black;
+    border-radius: 2vw;
+    height: fit-content;
+    width: 15vw;
+    margin: 0.1vh 0.8vw;
+    padding: 0.1vw 1vw;
+}
+
+.navBar .search input:hover {
+    transform: scale(1.1);
+    background-color: lightgray;
+}
+
+.navBar .search button {
+    font-size: 1.5vw;
+    height: fit-content;
+    width: fit-content;
+    border: 0.25vw solid black;
+    border-radius: 2vw;
+    margin: 0.1vw 0.8vw;
+    padding: 0.1vw 1vw;
+    box-shadow: 0.1vh 0.1vh black;
+}
+
+.navBar .search button:hover {
+    transform: scale(1.1);
+    background-color: lightgray;
+}
+
+.navBar .search button:active {
+    background-color: darkgray;
+    transform: scale(1.1);
+    box-shadow: -0.1vh -0.1vh black;
+}
+
+.home {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.home div img {
+    display: block;
+    border-radius: 20vw;
+    height: 35vh;
+    width: 17vw;
+    margin: 1.5vh auto;
+}
+
+.home div img:hover {
+    transform: scale(1.02);
+}
+
+.home div {
+    color: teal;
+    background-color: lightcyan;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 2vw;
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    padding: 1.5vw;
+    margin: 2vw;
+    border-radius: 4vw;
+}
+
+.home div:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
